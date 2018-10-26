@@ -8,11 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		D3D929662180D6F400F79425 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D929652180D6F400F79425 /* AppDelegate.swift */; };
-		D3D929682180D6F400F79425 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D929672180D6F400F79425 /* ViewController.swift */; };
 		D3D9296B2180D6F400F79425 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3D929692180D6F400F79425 /* Main.storyboard */; };
 		D3D9296D2180D6F600F79425 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3D9296C2180D6F600F79425 /* Assets.xcassets */; };
 		D3D929702180D6F600F79425 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3D9296E2180D6F600F79425 /* LaunchScreen.storyboard */; };
 		D3D9297B2180D6F600F79425 /* BuyBuyGoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D9297A2180D6F600F79425 /* BuyBuyGoTests.swift */; };
+		D3D929862180D71D00F79425 /* FirstMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D929852180D71D00F79425 /* FirstMainViewController.swift */; };
+		D3D9298C2180D85D00F79425 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D9298B2180D85D00F79425 /* MainViewController.swift */; };
+		D3D929902180DA4600F79425 /* DLHamburguerNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D9298D2180DA4600F79425 /* DLHamburguerNavigationController.swift */; };
+		D3D929912180DA4600F79425 /* DLHamburguerContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D9298E2180DA4600F79425 /* DLHamburguerContainerViewController.swift */; };
+		D3D929922180DA4600F79425 /* DLHamburguerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D9298F2180DA4600F79425 /* DLHamburguerViewController.swift */; };
+		D3D929942180DB1100F79425 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D929932180DB1100F79425 /* MenuTableViewController.swift */; };
+		D3D929972180DC9600F79425 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D929962180DC9600F79425 /* MenuTableViewCell.swift */; };
+		D3D9299A2180DD3400F79425 /* MenuInformationMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D929992180DD3400F79425 /* MenuInformationMode.swift */; };
+		D3D9299C2181BC7400F79425 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D9299B2181BC7400F79425 /* LoginViewController.swift */; };
+		D3D9299F21820A7B00F79425 /* EmailLeftLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D9299E21820A7B00F79425 /* EmailLeftLoginViewController.swift */; };
+		D3D929A12182C0E500F79425 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D3D929A02182C0E500F79425 /* GoogleService-Info.plist */; };
+		D70E0587100A736E6507EDFC /* Pods_BuyBuyGo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B7506623FE2893273B4B458 /* Pods_BuyBuyGo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,9 +37,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		577E0ED85E09FB68891920F8 /* Pods_BuyBuyGoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BuyBuyGoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B7506623FE2893273B4B458 /* Pods_BuyBuyGo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BuyBuyGo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		72D957CEDF170C4221AE81E7 /* Pods-BuyBuyGo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BuyBuyGo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BuyBuyGo/Pods-BuyBuyGo.debug.xcconfig"; sourceTree = "<group>"; };
 		D3D929622180D6F400F79425 /* BuyBuyGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BuyBuyGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3D929652180D6F400F79425 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D3D929672180D6F400F79425 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D3D9296A2180D6F400F79425 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D3D9296C2180D6F600F79425 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D3D9296F2180D6F600F79425 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +49,18 @@
 		D3D929762180D6F600F79425 /* BuyBuyGoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BuyBuyGoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3D9297A2180D6F600F79425 /* BuyBuyGoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyBuyGoTests.swift; sourceTree = "<group>"; };
 		D3D9297C2180D6F600F79425 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3D929852180D71D00F79425 /* FirstMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstMainViewController.swift; sourceTree = "<group>"; };
+		D3D9298B2180D85D00F79425 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		D3D9298D2180DA4600F79425 /* DLHamburguerNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DLHamburguerNavigationController.swift; sourceTree = "<group>"; };
+		D3D9298E2180DA4600F79425 /* DLHamburguerContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DLHamburguerContainerViewController.swift; sourceTree = "<group>"; };
+		D3D9298F2180DA4600F79425 /* DLHamburguerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DLHamburguerViewController.swift; sourceTree = "<group>"; };
+		D3D929932180DB1100F79425 /* MenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
+		D3D929962180DC9600F79425 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
+		D3D929992180DD3400F79425 /* MenuInformationMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuInformationMode.swift; sourceTree = "<group>"; };
+		D3D9299B2181BC7400F79425 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		D3D9299E21820A7B00F79425 /* EmailLeftLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailLeftLoginViewController.swift; sourceTree = "<group>"; };
+		D3D929A02182C0E500F79425 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E6572CB9B524F34C26A90F1A /* Pods-BuyBuyGo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BuyBuyGo.release.xcconfig"; path = "Pods/Target Support Files/Pods-BuyBuyGo/Pods-BuyBuyGo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D70E0587100A736E6507EDFC /* Pods_BuyBuyGo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +82,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		58B70DB5E305277DBC201404 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5B7506623FE2893273B4B458 /* Pods_BuyBuyGo.framework */,
+				577E0ED85E09FB68891920F8 /* Pods_BuyBuyGoTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BAC265E7B71F927C87038277 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				72D957CEDF170C4221AE81E7 /* Pods-BuyBuyGo.debug.xcconfig */,
+				E6572CB9B524F34C26A90F1A /* Pods-BuyBuyGo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D3D929592180D6F400F79425 = {
 			isa = PBXGroup;
 			children = (
 				D3D929642180D6F400F79425 /* BuyBuyGo */,
 				D3D929792180D6F600F79425 /* BuyBuyGoTests */,
 				D3D929632180D6F400F79425 /* Products */,
+				BAC265E7B71F927C87038277 /* Pods */,
+				58B70DB5E305277DBC201404 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,12 +123,18 @@
 		D3D929642180D6F400F79425 /* BuyBuyGo */ = {
 			isa = PBXGroup;
 			children = (
+				D3D929872180D75300F79425 /* MenuState */,
 				D3D929652180D6F400F79425 /* AppDelegate.swift */,
-				D3D929672180D6F400F79425 /* ViewController.swift */,
 				D3D929692180D6F400F79425 /* Main.storyboard */,
+				D3D929852180D71D00F79425 /* FirstMainViewController.swift */,
+				D3D929982180DD1200F79425 /* Model */,
+				D3D929952180DC5800F79425 /* MenuTableview */,
+				D3D9298B2180D85D00F79425 /* MainViewController.swift */,
+				D3D9299D2181BC8300F79425 /* LoginView */,
 				D3D9296C2180D6F600F79425 /* Assets.xcassets */,
 				D3D9296E2180D6F600F79425 /* LaunchScreen.storyboard */,
 				D3D929712180D6F600F79425 /* Info.plist */,
+				D3D929A02182C0E500F79425 /* GoogleService-Info.plist */,
 			);
 			path = BuyBuyGo;
 			sourceTree = "<group>";
@@ -96,6 +148,42 @@
 			path = BuyBuyGoTests;
 			sourceTree = "<group>";
 		};
+		D3D929872180D75300F79425 /* MenuState */ = {
+			isa = PBXGroup;
+			children = (
+				D3D9298E2180DA4600F79425 /* DLHamburguerContainerViewController.swift */,
+				D3D9298D2180DA4600F79425 /* DLHamburguerNavigationController.swift */,
+				D3D9298F2180DA4600F79425 /* DLHamburguerViewController.swift */,
+			);
+			path = MenuState;
+			sourceTree = "<group>";
+		};
+		D3D929952180DC5800F79425 /* MenuTableview */ = {
+			isa = PBXGroup;
+			children = (
+				D3D929932180DB1100F79425 /* MenuTableViewController.swift */,
+				D3D929962180DC9600F79425 /* MenuTableViewCell.swift */,
+			);
+			path = MenuTableview;
+			sourceTree = "<group>";
+		};
+		D3D929982180DD1200F79425 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D3D929992180DD3400F79425 /* MenuInformationMode.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D3D9299D2181BC8300F79425 /* LoginView */ = {
+			isa = PBXGroup;
+			children = (
+				D3D9299B2181BC7400F79425 /* LoginViewController.swift */,
+				D3D9299E21820A7B00F79425 /* EmailLeftLoginViewController.swift */,
+			);
+			path = LoginView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +191,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D3D9297F2180D6F600F79425 /* Build configuration list for PBXNativeTarget "BuyBuyGo" */;
 			buildPhases = (
+				9C6F2854809355B9C4CB3EA4 /* [CP] Check Pods Manifest.lock */,
 				D3D9295E2180D6F400F79425 /* Sources */,
 				D3D9295F2180D6F400F79425 /* Frameworks */,
 				D3D929602180D6F400F79425 /* Resources */,
+				F6D1B359075E49F9D21AFE05 /* [CP] Embed Pods Frameworks */,
+				2C1E760EEE61545C738188C1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -178,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3D929702180D6F600F79425 /* LaunchScreen.storyboard in Resources */,
+				D3D929A12182C0E500F79425 /* GoogleService-Info.plist in Resources */,
 				D3D9296D2180D6F600F79425 /* Assets.xcassets in Resources */,
 				D3D9296B2180D6F400F79425 /* Main.storyboard in Resources */,
 			);
@@ -192,13 +284,95 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2C1E760EEE61545C738188C1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BuyBuyGo/Pods-BuyBuyGo-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BuyBuyGo/Pods-BuyBuyGo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C6F2854809355B9C4CB3EA4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BuyBuyGo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6D1B359075E49F9D21AFE05 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BuyBuyGo/Pods-BuyBuyGo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BuyBuyGo/Pods-BuyBuyGo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D3D9295E2180D6F400F79425 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3D929682180D6F400F79425 /* ViewController.swift in Sources */,
+				D3D9298C2180D85D00F79425 /* MainViewController.swift in Sources */,
+				D3D929942180DB1100F79425 /* MenuTableViewController.swift in Sources */,
+				D3D929972180DC9600F79425 /* MenuTableViewCell.swift in Sources */,
+				D3D9299A2180DD3400F79425 /* MenuInformationMode.swift in Sources */,
+				D3D929862180D71D00F79425 /* FirstMainViewController.swift in Sources */,
+				D3D929922180DA4600F79425 /* DLHamburguerViewController.swift in Sources */,
+				D3D9299F21820A7B00F79425 /* EmailLeftLoginViewController.swift in Sources */,
+				D3D929912180DA4600F79425 /* DLHamburguerContainerViewController.swift in Sources */,
 				D3D929662180D6F400F79425 /* AppDelegate.swift in Sources */,
+				D3D9299C2181BC7400F79425 /* LoginViewController.swift in Sources */,
+				D3D929902180DA4600F79425 /* DLHamburguerNavigationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,11 +532,13 @@
 		};
 		D3D929802180D6F600F79425 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72D957CEDF170C4221AE81E7 /* Pods-BuyBuyGo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T29CRUSHY5;
 				INFOPLIST_FILE = BuyBuyGo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -370,17 +546,19 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.LIOU.BuyBuyGo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		D3D929812180D6F600F79425 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6572CB9B524F34C26A90F1A /* Pods-BuyBuyGo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T29CRUSHY5;
 				INFOPLIST_FILE = BuyBuyGo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -388,7 +566,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.LIOU.BuyBuyGo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
