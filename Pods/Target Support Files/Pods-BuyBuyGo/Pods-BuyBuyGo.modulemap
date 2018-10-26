@@ -1,0 +1,6 @@
+framework module Pods_BuyBuyGo {
+  umbrella header "Pods-BuyBuyGo-umbrella.h"
+
+  export *
+  module * { export * }
+}
