@@ -12,8 +12,6 @@ class FirstMainViewController: DLHamburguerViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
     
     
@@ -32,6 +30,8 @@ class FirstMainViewController: DLHamburguerViewController {
         
         self.menuViewController = self.storyboard?.instantiateViewController(withIdentifier: "MenuTableViewController")
     }
-    
+    /*
+     try
+     */
 
 }
