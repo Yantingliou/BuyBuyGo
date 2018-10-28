@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB1786C24276D644DCDF1F97 /* Pods_BuyBuyGoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 577E0ED85E09FB68891920F8 /* Pods_BuyBuyGoTests.framework */; };
 		D3D929662180D6F400F79425 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D929652180D6F400F79425 /* AppDelegate.swift */; };
 		D3D9296B2180D6F400F79425 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3D929692180D6F400F79425 /* Main.storyboard */; };
 		D3D9296D2180D6F600F79425 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3D9296C2180D6F600F79425 /* Assets.xcassets */; };
@@ -40,6 +41,8 @@
 		577E0ED85E09FB68891920F8 /* Pods_BuyBuyGoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BuyBuyGoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B7506623FE2893273B4B458 /* Pods_BuyBuyGo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BuyBuyGo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		72D957CEDF170C4221AE81E7 /* Pods-BuyBuyGo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BuyBuyGo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BuyBuyGo/Pods-BuyBuyGo.debug.xcconfig"; sourceTree = "<group>"; };
+		CA888AAF0342D0C7CF105A0C /* Pods-BuyBuyGoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BuyBuyGoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BuyBuyGoTests/Pods-BuyBuyGoTests.release.xcconfig"; sourceTree = "<group>"; };
+		CFE12A2E94FED2249DAEF3CC /* Pods-BuyBuyGoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BuyBuyGoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BuyBuyGoTests/Pods-BuyBuyGoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D3D929622180D6F400F79425 /* BuyBuyGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BuyBuyGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3D929652180D6F400F79425 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D3D9296A2180D6F400F79425 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -76,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB1786C24276D644DCDF1F97 /* Pods_BuyBuyGoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +100,8 @@
 			children = (
 				72D957CEDF170C4221AE81E7 /* Pods-BuyBuyGo.debug.xcconfig */,
 				E6572CB9B524F34C26A90F1A /* Pods-BuyBuyGo.release.xcconfig */,
+				CFE12A2E94FED2249DAEF3CC /* Pods-BuyBuyGoTests.debug.xcconfig */,
+				CA888AAF0342D0C7CF105A0C /* Pods-BuyBuyGoTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -211,9 +217,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D3D929822180D6F600F79425 /* Build configuration list for PBXNativeTarget "BuyBuyGoTests" */;
 			buildPhases = (
+				3CFE22DBB48DED46E074272F /* [CP] Check Pods Manifest.lock */,
 				D3D929722180D6F600F79425 /* Sources */,
 				D3D929732180D6F600F79425 /* Frameworks */,
 				D3D929742180D6F600F79425 /* Resources */,
+				88E774358CBAAB12976D7C30 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -307,6 +315,50 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BuyBuyGo/Pods-BuyBuyGo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		3CFE22DBB48DED46E074272F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BuyBuyGoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		88E774358CBAAB12976D7C30 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BuyBuyGoTests/Pods-BuyBuyGoTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac-Defines-NSData+zlib/GoogleToolboxForMac.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BuyBuyGoTests/Pods-BuyBuyGoTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		9C6F2854809355B9C4CB3EA4 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -340,7 +392,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-BuyBuyGo/Pods-BuyBuyGo-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac-f0850809/GoogleToolboxForMac.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
@@ -572,6 +624,7 @@
 		};
 		D3D929832180D6F600F79425 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFE12A2E94FED2249DAEF3CC /* Pods-BuyBuyGoTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -593,6 +646,7 @@
 		};
 		D3D929842180D6F600F79425 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA888AAF0342D0C7CF105A0C /* Pods-BuyBuyGoTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

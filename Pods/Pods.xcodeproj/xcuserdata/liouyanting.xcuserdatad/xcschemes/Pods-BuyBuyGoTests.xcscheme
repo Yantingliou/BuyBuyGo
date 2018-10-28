@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "350F745B444EE58A877FFC0A8939E8DD"
-               BuildableName = "Pods_BuyBuyGo.framework"
-               BlueprintName = "Pods-BuyBuyGo"
+               BlueprintIdentifier = "CFD311AC56C35BC435413E3AE5E74CAF"
+               BuildableName = "Pods_BuyBuyGoTests.framework"
+               BlueprintName = "Pods-BuyBuyGoTests"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "350F745B444EE58A877FFC0A8939E8DD"
-            BuildableName = "Pods_BuyBuyGo.framework"
-            BlueprintName = "Pods-BuyBuyGo"
+            BlueprintIdentifier = "CFD311AC56C35BC435413E3AE5E74CAF"
+            BuildableName = "Pods_BuyBuyGoTests.framework"
+            BlueprintName = "Pods-BuyBuyGoTests"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

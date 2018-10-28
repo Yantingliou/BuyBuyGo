@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "350F745B444EE58A877FFC0A8939E8DD"
-               BuildableName = "Pods_BuyBuyGo.framework"
-               BlueprintName = "Pods-BuyBuyGo"
+               BlueprintIdentifier = "2A2DC3B4E168175888464C600C9FD64D"
+               BuildableName = "GoogleToolboxForMac.framework"
+               BlueprintName = "GoogleToolboxForMac-f0850809"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "350F745B444EE58A877FFC0A8939E8DD"
-            BuildableName = "Pods_BuyBuyGo.framework"
-            BlueprintName = "Pods-BuyBuyGo"
+            BlueprintIdentifier = "2A2DC3B4E168175888464C600C9FD64D"
+            BuildableName = "GoogleToolboxForMac.framework"
+            BlueprintName = "GoogleToolboxForMac-f0850809"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

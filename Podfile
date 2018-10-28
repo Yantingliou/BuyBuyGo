@@ -11,5 +11,9 @@
   pod 'Firebase/Core' 
   pod 'GoogleSignIn'
 
+  	target 'BuyBuyGoTests' do
+	inherit! :search_paths
+	pod'Firebase'
+	end
 
 end
