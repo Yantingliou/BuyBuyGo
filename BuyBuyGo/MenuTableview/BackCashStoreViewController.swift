@@ -8,8 +8,10 @@
 
 import UIKit
 
-class BackCashStoreViewController: UIViewController {
+class BackCashStoreViewController: UIViewController{
 
+    let dataImformation = DataImformation()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -27,4 +29,35 @@ class BackCashStoreViewController: UIViewController {
     }
     */
 
+}
+
+extension BackCashStoreViewController: UICollectionViewDataSource,UICollectionViewDelegate {
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return dataImformation.backStoreImageName.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        let cell = collectionView.dequeueReusableCell(
+            withReuseIdentifier: "BackStoreCashCollectionViewCell", for: indexPath)
+            as! BackStoreCashCollectionViewCell
+        var useImageName: String?
+
+        useImageName  = dataImformation.backStoreImageName[indexPath.row]
+    
+        cell.backStoreCashImageView.image =  UIImage(named:useImageName!)
+
+    return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print("select \(indexPath)")
+       let vc = self.storyboard?.instantiateViewController(withIdentifier: "BackStoreDetailsViewController") as! BackStoreDetailsViewController
+            vc.imageViewName = dataImformation.backStoreImageName[indexPath.row]
+        vc.view.backgroundColor = UIColor.init(red: 0, green: 0, blue: 0, alpha: 0.5)
+
+        self.present(vc, animated: false, completion: nil)
+    }
+    
 }

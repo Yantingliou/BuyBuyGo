@@ -163,7 +163,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XGx-cQ-fX7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4288.8000000000002" y="744.3778110944528"/>
+            <point key="canvasLocation" x="5228" y="744.3778110944528"/>
         </scene>
         <!--Main View Controller-->
         <scene sceneID="tsv-OG-B8R">
@@ -568,7 +568,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="geA-OF-SNG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2371" y="-443"/>
+            <point key="canvasLocation" x="2370.4000000000001" y="-443.02848575712147"/>
         </scene>
         <!--現金回饋商店-->
         <scene sceneID="GSt-BV-ha9">
@@ -588,14 +588,14 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="cSz-QV-One">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="BackStoreCashCollectionViewCell" reuseIdentifier="BackStoreCashCollectionViewCell" id="cSz-QV-One" customClass="BackStoreCashCollectionViewCell" customModule="BuyBuyGo" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="150" height="146"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="150" height="146"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="O0T-XF-upH">
+                                                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="O0T-XF-upH">
                                                     <rect key="frame" x="0.0" y="0.0" width="150" height="146"/>
                                                 </imageView>
                                             </subviews>
@@ -606,8 +606,15 @@
                                             <constraint firstAttribute="bottom" secondItem="O0T-XF-upH" secondAttribute="bottom" id="bE4-xF-obq"/>
                                             <constraint firstAttribute="trailing" secondItem="O0T-XF-upH" secondAttribute="trailing" id="bKJ-ao-8kQ"/>
                                         </constraints>
+                                        <connections>
+                                            <outlet property="backStoreCashImageView" destination="O0T-XF-upH" id="NeT-4C-Hhb"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="Qd5-z3-iKa" id="MT2-EL-qr9"/>
+                                    <outlet property="delegate" destination="Qd5-z3-iKa" id="EUJ-NN-4g1"/>
+                                </connections>
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -624,6 +631,114 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OJM-Ez-ql3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2368.8000000000002" y="226.23688155922042"/>
+        </scene>
+        <!--Back Store Details View Controller-->
+        <scene sceneID="ScF-KF-7bB">
+            <objects>
+                <viewController storyboardIdentifier="BackStoreDetailsViewController" id="Eqv-Hf-rYg" customClass="BackStoreDetailsViewController" customModule="BuyBuyGo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ti8-u4-0pc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Umo-dU-RcX">
+                                <rect key="frame" x="24" y="183.5" width="327" height="300"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mai-vP-xls">
+                                        <rect key="frame" x="0.0" y="150" width="327" height="150"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ErC-uJ-aG9">
+                                                <rect key="frame" x="0.0" y="110" width="327" height="40"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cWU-b1-HsD">
+                                                        <rect key="frame" x="0.0" y="0.0" width="163.5" height="40"/>
+                                                        <state key="normal" title="關閉"/>
+                                                        <connections>
+                                                            <action selector="closeAction:" destination="Eqv-Hf-rYg" eventType="touchUpInside" id="eGN-1U-Wxg"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iqh-vz-mc7">
+                                                        <rect key="frame" x="163.5" y="0.0" width="163.5" height="40"/>
+                                                        <state key="normal" title="購物，享分潤"/>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="cWU-b1-HsD" secondAttribute="bottom" id="2Qd-z4-zS0"/>
+                                                    <constraint firstItem="cWU-b1-HsD" firstAttribute="top" secondItem="ErC-uJ-aG9" secondAttribute="top" id="CfQ-gJ-CQP"/>
+                                                    <constraint firstAttribute="height" constant="40" id="EJq-MU-cKg"/>
+                                                    <constraint firstItem="iqh-vz-mc7" firstAttribute="top" secondItem="ErC-uJ-aG9" secondAttribute="top" id="Eo3-Lx-Bh9"/>
+                                                    <constraint firstAttribute="trailing" secondItem="iqh-vz-mc7" secondAttribute="trailing" id="FcC-oc-XTd"/>
+                                                    <constraint firstItem="iqh-vz-mc7" firstAttribute="width" secondItem="ErC-uJ-aG9" secondAttribute="width" multiplier="0.5" id="KAa-T3-pJ6"/>
+                                                    <constraint firstItem="cWU-b1-HsD" firstAttribute="leading" secondItem="ErC-uJ-aG9" secondAttribute="leading" id="bkR-JC-piT"/>
+                                                    <constraint firstAttribute="bottom" secondItem="iqh-vz-mc7" secondAttribute="bottom" id="tle-lP-2oQ"/>
+                                                    <constraint firstItem="cWU-b1-HsD" firstAttribute="width" secondItem="ErC-uJ-aG9" secondAttribute="width" multiplier="0.5" id="vQn-Q5-WIu"/>
+                                                </constraints>
+                                            </view>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="VoS-6m-V0Z">
+                                                <rect key="frame" x="10" y="4" width="307" height="102"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="ErC-uJ-aG9" secondAttribute="bottom" id="4Wk-ZX-usG"/>
+                                            <constraint firstItem="VoS-6m-V0Z" firstAttribute="leading" secondItem="Mai-vP-xls" secondAttribute="leading" constant="10" id="DGb-7x-VLl"/>
+                                            <constraint firstAttribute="height" constant="150" id="Msa-qp-L4g"/>
+                                            <constraint firstAttribute="trailing" secondItem="ErC-uJ-aG9" secondAttribute="trailing" id="MtA-JX-0ry"/>
+                                            <constraint firstItem="VoS-6m-V0Z" firstAttribute="top" secondItem="Mai-vP-xls" secondAttribute="top" constant="4" id="Npk-js-VeX"/>
+                                            <constraint firstItem="ErC-uJ-aG9" firstAttribute="leading" secondItem="Mai-vP-xls" secondAttribute="leading" id="S7U-Po-Iwf"/>
+                                            <constraint firstItem="ErC-uJ-aG9" firstAttribute="top" secondItem="VoS-6m-V0Z" secondAttribute="bottom" constant="4" id="k4C-BC-Z5O"/>
+                                            <constraint firstAttribute="trailing" secondItem="VoS-6m-V0Z" secondAttribute="trailing" constant="10" id="ym0-Fb-M8g"/>
+                                        </constraints>
+                                    </view>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7lS-18-YZ9">
+                                        <rect key="frame" x="10" y="6" width="150" height="130"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="130" id="aBq-GL-nSI"/>
+                                            <constraint firstAttribute="width" constant="150" id="kG1-ev-H6z"/>
+                                        </constraints>
+                                    </imageView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Pi8-vm-sUh">
+                                        <rect key="frame" x="164" y="6" width="155" height="134"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Pi8-vm-sUh" secondAttribute="trailing" constant="8" id="1kY-Xw-pB6"/>
+                                    <constraint firstItem="Mai-vP-xls" firstAttribute="top" secondItem="Pi8-vm-sUh" secondAttribute="bottom" constant="10" id="4KL-B3-5qy"/>
+                                    <constraint firstItem="7lS-18-YZ9" firstAttribute="leading" secondItem="Umo-dU-RcX" secondAttribute="leading" constant="10" id="6sz-Ya-UoK"/>
+                                    <constraint firstAttribute="bottom" secondItem="Mai-vP-xls" secondAttribute="bottom" id="F0g-77-Mdd"/>
+                                    <constraint firstAttribute="trailing" secondItem="Mai-vP-xls" secondAttribute="trailing" id="FIa-s7-xJ7"/>
+                                    <constraint firstItem="Pi8-vm-sUh" firstAttribute="leading" secondItem="7lS-18-YZ9" secondAttribute="trailing" constant="4" id="Ids-b7-1Rw"/>
+                                    <constraint firstItem="Pi8-vm-sUh" firstAttribute="top" secondItem="Umo-dU-RcX" secondAttribute="top" constant="6" id="KpU-bM-Ppn"/>
+                                    <constraint firstItem="Mai-vP-xls" firstAttribute="leading" secondItem="Umo-dU-RcX" secondAttribute="leading" id="OGB-rC-QfC"/>
+                                    <constraint firstAttribute="height" constant="300" id="uic-wa-FaS"/>
+                                    <constraint firstItem="7lS-18-YZ9" firstAttribute="top" secondItem="Umo-dU-RcX" secondAttribute="top" constant="6" id="v7Q-d4-hg0"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Umo-dU-RcX" firstAttribute="leading" secondItem="zQd-8Y-8b1" secondAttribute="leading" constant="24" id="DGh-C0-cwc"/>
+                            <constraint firstItem="zQd-8Y-8b1" firstAttribute="trailing" secondItem="Umo-dU-RcX" secondAttribute="trailing" constant="24" id="YI6-5Y-PVi"/>
+                            <constraint firstItem="Umo-dU-RcX" firstAttribute="centerY" secondItem="Ti8-u4-0pc" secondAttribute="centerY" id="xpx-XC-0eI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zQd-8Y-8b1"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ekk-HK-tJq"/>
+                    <connections>
+                        <outlet property="detailView" destination="7lS-18-YZ9" id="v91-WX-2q1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tGB-67-GtU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4079.1999999999998" y="215.44227886056973"/>
         </scene>
         <!--Menu Table View Controller-->
         <scene sceneID="u4A-fb-CEc">
@@ -702,7 +817,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zLc-N5-OQc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5533.6000000000004" y="347.67616191904051"/>
+            <point key="canvasLocation" x="6472.8000000000002" y="347.67616191904051"/>
         </scene>
         <!--Hamburguer Navigation Controller-->
         <scene sceneID="Dl7-1o-FPc">
@@ -789,6 +904,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wHR-Wj-Wna" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3319" y="1466"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Xvx-1W-yjm">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="TV6-Wv-Yt7" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="rWn-F3-Zmt">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Eqv-Hf-rYg" kind="relationship" relationship="rootViewController" id="nOU-GH-I4Z"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4sm-xg-uyH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3140" y="215.44227886056973"/>
         </scene>
     </scenes>
     <resources>

@@ -25,6 +25,9 @@
 		D3D9299F21820A7B00F79425 /* EmailLeftLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D9299E21820A7B00F79425 /* EmailLeftLoginViewController.swift */; };
 		D3D929A12182C0E500F79425 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D3D929A02182C0E500F79425 /* GoogleService-Info.plist */; };
 		D3E3B9782186D99200E2E93C /* BackCashStoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E3B9772186D99200E2E93C /* BackCashStoreViewController.swift */; };
+		D3E3B97A2186E30700E2E93C /* BackStoreCashCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E3B9792186E30700E2E93C /* BackStoreCashCollectionViewCell.swift */; };
+		D3E3B97C2186E3EC00E2E93C /* DataImformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E3B97B2186E3EC00E2E93C /* DataImformation.swift */; };
+		D3E3B97E2186EAC800E2E93C /* BackStoreDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E3B97D2186EAC800E2E93C /* BackStoreDetailsViewController.swift */; };
 		D70E0587100A736E6507EDFC /* Pods_BuyBuyGo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B7506623FE2893273B4B458 /* Pods_BuyBuyGo.framework */; };
 /* End PBXBuildFile section */
 
@@ -65,6 +68,9 @@
 		D3D9299E21820A7B00F79425 /* EmailLeftLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailLeftLoginViewController.swift; sourceTree = "<group>"; };
 		D3D929A02182C0E500F79425 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D3E3B9772186D99200E2E93C /* BackCashStoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackCashStoreViewController.swift; sourceTree = "<group>"; };
+		D3E3B9792186E30700E2E93C /* BackStoreCashCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackStoreCashCollectionViewCell.swift; sourceTree = "<group>"; };
+		D3E3B97B2186E3EC00E2E93C /* DataImformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataImformation.swift; sourceTree = "<group>"; };
+		D3E3B97D2186EAC800E2E93C /* BackStoreDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackStoreDetailsViewController.swift; sourceTree = "<group>"; };
 		E6572CB9B524F34C26A90F1A /* Pods-BuyBuyGo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BuyBuyGo.release.xcconfig"; path = "Pods/Target Support Files/Pods-BuyBuyGo/Pods-BuyBuyGo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -172,6 +178,8 @@
 				D3D929932180DB1100F79425 /* MenuTableViewController.swift */,
 				D3D929962180DC9600F79425 /* MenuTableViewCell.swift */,
 				D3E3B9772186D99200E2E93C /* BackCashStoreViewController.swift */,
+				D3E3B97D2186EAC800E2E93C /* BackStoreDetailsViewController.swift */,
+				D3E3B9792186E30700E2E93C /* BackStoreCashCollectionViewCell.swift */,
 			);
 			path = MenuTableview;
 			sourceTree = "<group>";
@@ -180,6 +188,7 @@
 			isa = PBXGroup;
 			children = (
 				D3D929992180DD3400F79425 /* MenuInformationMode.swift */,
+				D3E3B97B2186E3EC00E2E93C /* DataImformation.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -421,12 +430,15 @@
 				D3D929942180DB1100F79425 /* MenuTableViewController.swift in Sources */,
 				D3D929972180DC9600F79425 /* MenuTableViewCell.swift in Sources */,
 				D3D9299A2180DD3400F79425 /* MenuInformationMode.swift in Sources */,
+				D3E3B97E2186EAC800E2E93C /* BackStoreDetailsViewController.swift in Sources */,
 				D3D929862180D71D00F79425 /* FirstMainViewController.swift in Sources */,
+				D3E3B97C2186E3EC00E2E93C /* DataImformation.swift in Sources */,
 				D3D929922180DA4600F79425 /* DLHamburguerViewController.swift in Sources */,
 				D3D9299F21820A7B00F79425 /* EmailLeftLoginViewController.swift in Sources */,
 				D3D929912180DA4600F79425 /* DLHamburguerContainerViewController.swift in Sources */,
 				D3E3B9782186D99200E2E93C /* BackCashStoreViewController.swift in Sources */,
 				D3D929662180D6F400F79425 /* AppDelegate.swift in Sources */,
+				D3E3B97A2186E30700E2E93C /* BackStoreCashCollectionViewCell.swift in Sources */,
 				D3D9299C2181BC7400F79425 /* LoginViewController.swift in Sources */,
 				D3D929902180DA4600F79425 /* DLHamburguerNavigationController.swift in Sources */,
 			);
