@@ -24,6 +24,7 @@
 		D3D9299C2181BC7400F79425 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D9299B2181BC7400F79425 /* LoginViewController.swift */; };
 		D3D9299F21820A7B00F79425 /* EmailLeftLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D9299E21820A7B00F79425 /* EmailLeftLoginViewController.swift */; };
 		D3D929A12182C0E500F79425 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D3D929A02182C0E500F79425 /* GoogleService-Info.plist */; };
+		D3E3B9782186D99200E2E93C /* BackCashStoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E3B9772186D99200E2E93C /* BackCashStoreViewController.swift */; };
 		D70E0587100A736E6507EDFC /* Pods_BuyBuyGo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B7506623FE2893273B4B458 /* Pods_BuyBuyGo.framework */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +64,7 @@
 		D3D9299B2181BC7400F79425 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		D3D9299E21820A7B00F79425 /* EmailLeftLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailLeftLoginViewController.swift; sourceTree = "<group>"; };
 		D3D929A02182C0E500F79425 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D3E3B9772186D99200E2E93C /* BackCashStoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackCashStoreViewController.swift; sourceTree = "<group>"; };
 		E6572CB9B524F34C26A90F1A /* Pods-BuyBuyGo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BuyBuyGo.release.xcconfig"; path = "Pods/Target Support Files/Pods-BuyBuyGo/Pods-BuyBuyGo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -169,6 +171,7 @@
 			children = (
 				D3D929932180DB1100F79425 /* MenuTableViewController.swift */,
 				D3D929962180DC9600F79425 /* MenuTableViewCell.swift */,
+				D3E3B9772186D99200E2E93C /* BackCashStoreViewController.swift */,
 			);
 			path = MenuTableview;
 			sourceTree = "<group>";
@@ -422,6 +425,7 @@
 				D3D929922180DA4600F79425 /* DLHamburguerViewController.swift in Sources */,
 				D3D9299F21820A7B00F79425 /* EmailLeftLoginViewController.swift in Sources */,
 				D3D929912180DA4600F79425 /* DLHamburguerContainerViewController.swift in Sources */,
+				D3E3B9782186D99200E2E93C /* BackCashStoreViewController.swift in Sources */,
 				D3D929662180D6F400F79425 /* AppDelegate.swift in Sources */,
 				D3D9299C2181BC7400F79425 /* LoginViewController.swift in Sources */,
 				D3D929902180DA4600F79425 /* DLHamburguerNavigationController.swift in Sources */,
