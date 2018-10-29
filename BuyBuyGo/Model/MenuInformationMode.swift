@@ -20,4 +20,6 @@ class MenuInformationMode: NSObject {
         useView.layer.shadowRadius = 5
         useView.layer.shadowColor = UIColor(red: 44.0/255.0, green: 62.0/255.0, blue: 80.0/255.0, alpha: 1.0).cgColor
     }
+    
+  
 }
