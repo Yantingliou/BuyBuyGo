@@ -29,6 +29,7 @@
 		D3E3B97C2186E3EC00E2E93C /* DataImformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E3B97B2186E3EC00E2E93C /* DataImformation.swift */; };
 		D3E3B97E2186EAC800E2E93C /* BackStoreDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E3B97D2186EAC800E2E93C /* BackStoreDetailsViewController.swift */; };
 		D3E3B9812187247200E2E93C /* SecondCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E3B9802187247200E2E93C /* SecondCollectionViewCell.swift */; };
+		D3E3B983218764E200E2E93C /* FirstCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E3B982218764E200E2E93C /* FirstCollectionViewCell.swift */; };
 		D70E0587100A736E6507EDFC /* Pods_BuyBuyGo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B7506623FE2893273B4B458 /* Pods_BuyBuyGo.framework */; };
 /* End PBXBuildFile section */
 
@@ -73,6 +74,7 @@
 		D3E3B97B2186E3EC00E2E93C /* DataImformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataImformation.swift; sourceTree = "<group>"; };
 		D3E3B97D2186EAC800E2E93C /* BackStoreDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackStoreDetailsViewController.swift; sourceTree = "<group>"; };
 		D3E3B9802187247200E2E93C /* SecondCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondCollectionViewCell.swift; sourceTree = "<group>"; };
+		D3E3B982218764E200E2E93C /* FirstCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstCollectionViewCell.swift; sourceTree = "<group>"; };
 		E6572CB9B524F34C26A90F1A /* Pods-BuyBuyGo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BuyBuyGo.release.xcconfig"; path = "Pods/Target Support Files/Pods-BuyBuyGo/Pods-BuyBuyGo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -209,6 +211,7 @@
 				D3E3B9792186E30700E2E93C /* BackStoreCashCollectionViewCell.swift */,
 				D3D929962180DC9600F79425 /* MenuTableViewCell.swift */,
 				D3E3B9802187247200E2E93C /* SecondCollectionViewCell.swift */,
+				D3E3B982218764E200E2E93C /* FirstCollectionViewCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -447,6 +450,7 @@
 				D3D929922180DA4600F79425 /* DLHamburguerViewController.swift in Sources */,
 				D3D9299F21820A7B00F79425 /* EmailLeftLoginViewController.swift in Sources */,
 				D3D929912180DA4600F79425 /* DLHamburguerContainerViewController.swift in Sources */,
+				D3E3B983218764E200E2E93C /* FirstCollectionViewCell.swift in Sources */,
 				D3E3B9782186D99200E2E93C /* BackCashStoreViewController.swift in Sources */,
 				D3D929662180D6F400F79425 /* AppDelegate.swift in Sources */,
 				D3E3B9812187247200E2E93C /* SecondCollectionViewCell.swift in Sources */,

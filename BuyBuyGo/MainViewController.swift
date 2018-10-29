@@ -14,6 +14,7 @@ class MainViewController: UIViewController {
     @IBOutlet weak var secondCollectionView: UICollectionView!
     
     
+    var titleArray,backCashArray: [String]!
     let dataImformation = DataImformation()
     
     override func viewDidLoad() {
@@ -48,7 +49,7 @@ extension MainViewController :UICollectionViewDataSource,UICollectionViewDelegat
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         var dataCount = 0
         if collectionView == firstCollectionView {
-            dataCount = 1
+            dataCount = dataImformation.firstArrayData.count
         } else if collectionView == secondCollectionView {
             dataCount = dataImformation.backStoreImageName.count
         }
@@ -58,6 +59,9 @@ extension MainViewController :UICollectionViewDataSource,UICollectionViewDelegat
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if collectionView == firstCollectionView {
             
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FirstCollectionViewCell", for: indexPath) as! FirstCollectionViewCell
+            cell.firstImageView.image = UIImage(named:  dataImformation.firstArrayData[indexPath.row])
+            return cell
         } else if collectionView == secondCollectionView {
             
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "SecondCollectionViewCell", for: indexPath) as! SecondCollectionViewCell
@@ -69,11 +73,19 @@ extension MainViewController :UICollectionViewDataSource,UICollectionViewDelegat
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        if collectionView == firstCollectionView {
+            
+        } else if collectionView == secondCollectionView {
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "BackStoreDetailsViewController") as! BackStoreDetailsViewController
         vc.imageViewName = dataImformation.backStoreImageName[indexPath.row]
         vc.view.backgroundColor = UIColor.init(red: 0, green: 0, blue: 0, alpha: 0.5)
-        
+         titleArray = dataImformation.useData["title"]
+        backCashArray = dataImformation.useData["backCrash"]
+        vc.backCrash.text =  titleArray[indexPath.row]
+        vc.storeTitle.text = backCashArray[indexPath.row]
         self.present(vc, animated: false, completion: nil)
+        }
     }
     
 }

@@ -17,9 +17,10 @@ class DataImformation: NSObject {
     
     let useData = ["title":["Yahoo","17Life","東森購物","Qoo10","樂天市場","蝦皮商城"],
                    "backCrash":["回饋1%","回饋0.4~5.6%","回饋現金NT70","回饋2.1%","回饋0~10%","回饋1.5~3%"],
-                   "detailInformation":["訂單資訊於10天內顯示\n回饋於60天內確認"]
+                   "detailInformation":["單筆訂單回饋 $NT70","訂單資訊於10天內顯示\n回饋於60天內確認"]
     ]
     
+    let firstArrayData = ["IMG_1300.jpg","IMG_1301.jpg","IMG_1302.jpg","IMG_1303.jpg","IMG_1304.jpg","IMG_1305.jpg"]
     
   
 }
