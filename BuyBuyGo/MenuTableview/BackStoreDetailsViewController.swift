@@ -12,7 +12,10 @@ class BackStoreDetailsViewController: UIViewController {
 
     @IBOutlet weak var detailView: UIImageView!
     
+    @IBOutlet weak var storeTitle: UILabel!
+    @IBOutlet weak var backCrash: UILabel!
     var imageViewName: String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

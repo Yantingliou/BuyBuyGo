@@ -11,6 +11,7 @@ import UIKit
 class BackCashStoreViewController: UIViewController{
 
     let dataImformation = DataImformation()
+    var titleArray,backCrashArray: [String]?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -56,7 +57,11 @@ extension BackCashStoreViewController: UICollectionViewDataSource,UICollectionVi
        let vc = self.storyboard?.instantiateViewController(withIdentifier: "BackStoreDetailsViewController") as! BackStoreDetailsViewController
             vc.imageViewName = dataImformation.backStoreImageName[indexPath.row]
         vc.view.backgroundColor = UIColor.init(red: 0, green: 0, blue: 0, alpha: 0.5)
-
+       
+        titleArray = dataImformation.useData["title"]!
+        backCrashArray = dataImformation.useData["backCrash"]!
+        vc.storeTitle.text = titleArray![indexPath.row]
+        vc.backCrash.text = backCrashArray![indexPath.row]
         self.present(vc, animated: false, completion: nil)
     }
     
