@@ -20,7 +20,7 @@ class DataImformation: NSObject {
                    "detailInformation":["單筆訂單回饋 $NT70","訂單資訊於10天內顯示\n回饋於60天內確認"]
     ]
     
-    let firstArrayData = ["IMG_1300.jpg","IMG_1301.jpg","IMG_1302.jpg","IMG_1303.jpg","IMG_1304.jpg","IMG_1305.jpg"]
+    let firstArrayData = ["IMG_1300.jpg","IMG_1301.jpg","IMG_1302.jpg","IMG_1303.jpg","IMG_1304.jpg","IMG_1305.jpg","IMG_1306.jpg"]
     
   
 }

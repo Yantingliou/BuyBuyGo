@@ -30,6 +30,10 @@
 		D3E3B97E2186EAC800E2E93C /* BackStoreDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E3B97D2186EAC800E2E93C /* BackStoreDetailsViewController.swift */; };
 		D3E3B9812187247200E2E93C /* SecondCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E3B9802187247200E2E93C /* SecondCollectionViewCell.swift */; };
 		D3E3B983218764E200E2E93C /* FirstCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E3B982218764E200E2E93C /* FirstCollectionViewCell.swift */; };
+		D3E3B9852187F4F900E2E93C /* MoreSpecialCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E3B9842187F4F900E2E93C /* MoreSpecialCollectionView.swift */; };
+		D3E3B9872187F53E00E2E93C /* MoreSpecialCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E3B9862187F53E00E2E93C /* MoreSpecialCollectionViewCell.swift */; };
+		D3E3B9892187F9AA00E2E93C /* MoreSpecialDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E3B9882187F9AA00E2E93C /* MoreSpecialDetailsVC.swift */; };
+		D3E3B98B2188140E00E2E93C /* UseURLInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E3B98A2188140E00E2E93C /* UseURLInformation.swift */; };
 		D70E0587100A736E6507EDFC /* Pods_BuyBuyGo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B7506623FE2893273B4B458 /* Pods_BuyBuyGo.framework */; };
 /* End PBXBuildFile section */
 
@@ -75,6 +79,10 @@
 		D3E3B97D2186EAC800E2E93C /* BackStoreDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackStoreDetailsViewController.swift; sourceTree = "<group>"; };
 		D3E3B9802187247200E2E93C /* SecondCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondCollectionViewCell.swift; sourceTree = "<group>"; };
 		D3E3B982218764E200E2E93C /* FirstCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstCollectionViewCell.swift; sourceTree = "<group>"; };
+		D3E3B9842187F4F900E2E93C /* MoreSpecialCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreSpecialCollectionView.swift; sourceTree = "<group>"; };
+		D3E3B9862187F53E00E2E93C /* MoreSpecialCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreSpecialCollectionViewCell.swift; sourceTree = "<group>"; };
+		D3E3B9882187F9AA00E2E93C /* MoreSpecialDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreSpecialDetailsVC.swift; sourceTree = "<group>"; };
+		D3E3B98A2188140E00E2E93C /* UseURLInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseURLInformation.swift; sourceTree = "<group>"; };
 		E6572CB9B524F34C26A90F1A /* Pods-BuyBuyGo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BuyBuyGo.release.xcconfig"; path = "Pods/Target Support Files/Pods-BuyBuyGo/Pods-BuyBuyGo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -181,7 +189,9 @@
 			children = (
 				D3E3B97F2187243100E2E93C /* Cell */,
 				D3D929932180DB1100F79425 /* MenuTableViewController.swift */,
+				D3E3B9842187F4F900E2E93C /* MoreSpecialCollectionView.swift */,
 				D3E3B9772186D99200E2E93C /* BackCashStoreViewController.swift */,
+				D3E3B9882187F9AA00E2E93C /* MoreSpecialDetailsVC.swift */,
 				D3E3B97D2186EAC800E2E93C /* BackStoreDetailsViewController.swift */,
 			);
 			path = MenuTableview;
@@ -192,6 +202,7 @@
 			children = (
 				D3D929992180DD3400F79425 /* MenuInformationMode.swift */,
 				D3E3B97B2186E3EC00E2E93C /* DataImformation.swift */,
+				D3E3B98A2188140E00E2E93C /* UseURLInformation.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -209,6 +220,7 @@
 			isa = PBXGroup;
 			children = (
 				D3E3B9792186E30700E2E93C /* BackStoreCashCollectionViewCell.swift */,
+				D3E3B9862187F53E00E2E93C /* MoreSpecialCollectionViewCell.swift */,
 				D3D929962180DC9600F79425 /* MenuTableViewCell.swift */,
 				D3E3B9802187247200E2E93C /* SecondCollectionViewCell.swift */,
 				D3E3B982218764E200E2E93C /* FirstCollectionViewCell.swift */,
@@ -440,6 +452,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3E3B9872187F53E00E2E93C /* MoreSpecialCollectionViewCell.swift in Sources */,
 				D3D9298C2180D85D00F79425 /* MainViewController.swift in Sources */,
 				D3D929942180DB1100F79425 /* MenuTableViewController.swift in Sources */,
 				D3D929972180DC9600F79425 /* MenuTableViewCell.swift in Sources */,
@@ -447,14 +460,17 @@
 				D3E3B97E2186EAC800E2E93C /* BackStoreDetailsViewController.swift in Sources */,
 				D3D929862180D71D00F79425 /* FirstMainViewController.swift in Sources */,
 				D3E3B97C2186E3EC00E2E93C /* DataImformation.swift in Sources */,
+				D3E3B9892187F9AA00E2E93C /* MoreSpecialDetailsVC.swift in Sources */,
 				D3D929922180DA4600F79425 /* DLHamburguerViewController.swift in Sources */,
 				D3D9299F21820A7B00F79425 /* EmailLeftLoginViewController.swift in Sources */,
+				D3E3B9852187F4F900E2E93C /* MoreSpecialCollectionView.swift in Sources */,
 				D3D929912180DA4600F79425 /* DLHamburguerContainerViewController.swift in Sources */,
 				D3E3B983218764E200E2E93C /* FirstCollectionViewCell.swift in Sources */,
 				D3E3B9782186D99200E2E93C /* BackCashStoreViewController.swift in Sources */,
 				D3D929662180D6F400F79425 /* AppDelegate.swift in Sources */,
 				D3E3B9812187247200E2E93C /* SecondCollectionViewCell.swift in Sources */,
 				D3E3B97A2186E30700E2E93C /* BackStoreCashCollectionViewCell.swift in Sources */,
+				D3E3B98B2188140E00E2E93C /* UseURLInformation.swift in Sources */,
 				D3D9299C2181BC7400F79425 /* LoginViewController.swift in Sources */,
 				D3D929902180DA4600F79425 /* DLHamburguerNavigationController.swift in Sources */,
 			);

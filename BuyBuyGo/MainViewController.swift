@@ -30,6 +30,13 @@ class MainViewController: UIViewController {
         self.findHamburguerViewController()?.showMenuViewController()
     }
     
+    @IBAction func moreSpeiacl(_ sender: Any) {
+        
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "MoreSpecialCollectionView") as! MoreSpecialCollectionView
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
     }
