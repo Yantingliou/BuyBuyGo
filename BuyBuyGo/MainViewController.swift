@@ -83,7 +83,12 @@ extension MainViewController :UICollectionViewDataSource,UICollectionViewDelegat
         
         if collectionView == firstCollectionView {
             
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "MoreSpecialDetailsVC") as! MoreSpecialDetailsVC
+            vc.selectIndex = indexPath.row
+            self.present(vc,animated: false, completion: nil)
+            
         } else if collectionView == secondCollectionView {
+            
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "BackStoreDetailsViewController") as! BackStoreDetailsViewController
         vc.imageViewName = dataImformation.backStoreImageName[indexPath.row]
         vc.view.backgroundColor = UIColor.init(red: 0, green: 0, blue: 0, alpha: 0.5)
