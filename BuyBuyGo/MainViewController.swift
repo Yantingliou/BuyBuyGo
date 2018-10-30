@@ -13,16 +13,25 @@ class MainViewController: UIViewController {
     @IBOutlet weak var firstCollectionView: UICollectionView!
     @IBOutlet weak var secondCollectionView: UICollectionView!
     
-    
+    @IBOutlet weak var firstView: UILabel!
+    @IBOutlet weak var secondView: UILabel!
+    @IBOutlet weak var thirdView: UILabel!
+    @IBOutlet weak var fourthView: UILabel!
+    @IBOutlet weak var fiveView: UILabel!
     var titleArray,backCashArray: [String]!
+    
+    
     let dataImformation = DataImformation()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
-        
+        adjustBtnView(firstView)
+        adjustBtnView(secondView)
+        adjustBtnView(thirdView)
+        adjustBtnView(fourthView)
+        adjustBtnView(fiveView)
     }
     
     @IBAction func leftBtn(_ sender: Any) {
@@ -36,6 +45,16 @@ class MainViewController: UIViewController {
         navigationController?.pushViewController(vc, animated: true)
     }
     
+    func adjustBtnView(_ uselable:UILabel! ) {
+        uselable.clipsToBounds = true
+        uselable.layer.cornerRadius = 15
+        uselable.backgroundColor = .clear
+        uselable.layer.borderWidth = 2
+        let red =
+            UIColor(red: 120.0/255.0, green: 150.0/255.0, blue: 200.0/255.0, alpha: 1.0)
+        uselable.layer.borderColor = red.cgColor
+    }
+    
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
@@ -45,6 +64,7 @@ class MainViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
     
     
  
