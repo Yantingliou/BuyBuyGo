@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		AB1786C24276D644DCDF1F97 /* Pods_BuyBuyGoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 577E0ED85E09FB68891920F8 /* Pods_BuyBuyGoTests.framework */; };
+		D30ACEC5218883A30062C891 /* SecondMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30ACEC4218883A30062C891 /* SecondMainViewController.swift */; };
+		D3CE89EC218C9AED0039D186 /* FavoriteProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CE89EB218C9AED0039D186 /* FavoriteProductViewController.swift */; };
 		D3D929662180D6F400F79425 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D929652180D6F400F79425 /* AppDelegate.swift */; };
 		D3D9296B2180D6F400F79425 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3D929692180D6F400F79425 /* Main.storyboard */; };
 		D3D9296D2180D6F600F79425 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3D9296C2180D6F600F79425 /* Assets.xcassets */; };
@@ -53,6 +55,8 @@
 		72D957CEDF170C4221AE81E7 /* Pods-BuyBuyGo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BuyBuyGo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BuyBuyGo/Pods-BuyBuyGo.debug.xcconfig"; sourceTree = "<group>"; };
 		CA888AAF0342D0C7CF105A0C /* Pods-BuyBuyGoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BuyBuyGoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BuyBuyGoTests/Pods-BuyBuyGoTests.release.xcconfig"; sourceTree = "<group>"; };
 		CFE12A2E94FED2249DAEF3CC /* Pods-BuyBuyGoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BuyBuyGoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BuyBuyGoTests/Pods-BuyBuyGoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D30ACEC4218883A30062C891 /* SecondMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondMainViewController.swift; sourceTree = "<group>"; };
+		D3CE89EB218C9AED0039D186 /* FavoriteProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteProductViewController.swift; sourceTree = "<group>"; };
 		D3D929622180D6F400F79425 /* BuyBuyGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BuyBuyGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3D929652180D6F400F79425 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D3D9296A2180D6F400F79425 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -126,6 +130,22 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		D30ACEC32188829E0062C891 /* SecondVC */ = {
+			isa = PBXGroup;
+			children = (
+				D30ACEC4218883A30062C891 /* SecondMainViewController.swift */,
+			);
+			path = SecondVC;
+			sourceTree = "<group>";
+		};
+		D3CE89EA218C99F20039D186 /* MenuTableviewDetail */ = {
+			isa = PBXGroup;
+			children = (
+				D3CE89EB218C9AED0039D186 /* FavoriteProductViewController.swift */,
+			);
+			path = MenuTableviewDetail;
+			sourceTree = "<group>";
+		};
 		D3D929592180D6F400F79425 = {
 			isa = PBXGroup;
 			children = (
@@ -153,6 +173,8 @@
 				D3D929652180D6F400F79425 /* AppDelegate.swift */,
 				D3D929692180D6F400F79425 /* Main.storyboard */,
 				D3D929852180D71D00F79425 /* FirstMainViewController.swift */,
+				D30ACEC32188829E0062C891 /* SecondVC */,
+				D3E3B97F2187243100E2E93C /* Cell */,
 				D3D929982180DD1200F79425 /* Model */,
 				D3D929952180DC5800F79425 /* MenuTableview */,
 				D3D9298B2180D85D00F79425 /* MainViewController.swift */,
@@ -187,7 +209,7 @@
 		D3D929952180DC5800F79425 /* MenuTableview */ = {
 			isa = PBXGroup;
 			children = (
-				D3E3B97F2187243100E2E93C /* Cell */,
+				D3CE89EA218C99F20039D186 /* MenuTableviewDetail */,
 				D3D929932180DB1100F79425 /* MenuTableViewController.swift */,
 				D3E3B9842187F4F900E2E93C /* MoreSpecialCollectionView.swift */,
 				D3E3B9772186D99200E2E93C /* BackCashStoreViewController.swift */,
@@ -458,11 +480,13 @@
 				D3D929972180DC9600F79425 /* MenuTableViewCell.swift in Sources */,
 				D3D9299A2180DD3400F79425 /* MenuInformationMode.swift in Sources */,
 				D3E3B97E2186EAC800E2E93C /* BackStoreDetailsViewController.swift in Sources */,
+				D3CE89EC218C9AED0039D186 /* FavoriteProductViewController.swift in Sources */,
 				D3D929862180D71D00F79425 /* FirstMainViewController.swift in Sources */,
 				D3E3B97C2186E3EC00E2E93C /* DataImformation.swift in Sources */,
 				D3E3B9892187F9AA00E2E93C /* MoreSpecialDetailsVC.swift in Sources */,
 				D3D929922180DA4600F79425 /* DLHamburguerViewController.swift in Sources */,
 				D3D9299F21820A7B00F79425 /* EmailLeftLoginViewController.swift in Sources */,
+				D30ACEC5218883A30062C891 /* SecondMainViewController.swift in Sources */,
 				D3E3B9852187F4F900E2E93C /* MoreSpecialCollectionView.swift in Sources */,
 				D3D929912180DA4600F79425 /* DLHamburguerContainerViewController.swift in Sources */,
 				D3E3B983218764E200E2E93C /* FirstCollectionViewCell.swift in Sources */,

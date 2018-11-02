@@ -8,6 +8,10 @@
 
 import UIKit
 
+import Firebase
+import GoogleSignIn
+
+
 class LoginViewController: UIViewController {
     
     @IBOutlet weak var emailLogin: UIButton!
@@ -15,11 +19,13 @@ class LoginViewController: UIViewController {
     
     
    let menuInformationMode = MenuInformationMode()
-//   let dLHamburguerContainerViewController = DLHamburguerContainerViewController()
-//    let dLHamburguerViewController = DLHamburguerViewController()
+    
+   
+
 
    var goBackView: (()->())?
-
+    var passUserName: (()->())?
+    var nameData: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,6 +34,10 @@ class LoginViewController: UIViewController {
      menuInformationMode.adjustView(useView: emailLogin)
      menuInformationMode.adjustView(useView: rightEmailLogin)
      
+        
+        GIDSignIn.sharedInstance()?.clientID = FirebaseApp.app()?.options.clientID
+        GIDSignIn.sharedInstance()?.delegate = self
+        GIDSignIn.sharedInstance()?.uiDelegate = self
     }
     
 
@@ -41,7 +51,12 @@ class LoginViewController: UIViewController {
         }
 
     }
- 
+    
+    
+    @IBAction func googleAction(_ sender: Any) {
+         GIDSignIn.sharedInstance().signIn()
+    }
+    
     
     /*
     // MARK: - Navigation
@@ -53,4 +68,28 @@ class LoginViewController: UIViewController {
     }
     */
 
+}
+extension LoginViewController: GIDSignInDelegate,GIDSignInUIDelegate {
+    
+    
+    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
+        if error == nil {
+            if let useName = user.profile.name {
+//                print("useName is : \(useName)") // 泰瑞小六
+                nameData = useName
+//                print("userID is \(user.userID)") //"103561886863641120899")
+//                print("email :\(user.profile.email)") //("msze5189@gmail.com")
+                print("\(user.profile.hasImage)") //true
+               
+
+                self.dismiss(animated: true) {
+                    self.passUserName?()
+                }
+
+            } else {
+                print("error GoogleLogin \(error.localizedDescription)")
+            }
+        }
+    }
+    
 }

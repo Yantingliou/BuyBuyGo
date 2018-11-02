@@ -7,21 +7,29 @@
 //
 
 import UIKit
+import Google
+import GoogleSignIn
 
 class MenuTableViewController: UIViewController{
     
     let menuInformation = MenuInformationMode()
-    enum haveSingin {
-        case userHave, guest
-    }
   
+  
+    var userNameee: String?
+
+    @IBOutlet weak var topView: UIView!
+    @IBOutlet weak var userNameLable: UILabel!
     
-    var login = haveSingin.guest
+
+    let segues = ["1":"FavoriteProductViewController","2":"FavoriteProductViewController"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+
+        userNameLable.text = userNameee
+
     }
     
 
@@ -30,19 +38,23 @@ class MenuTableViewController: UIViewController{
         return self.storyboard?.instantiateViewController(withIdentifier: "DLDemoNavigationViewController") as! DLHamburguerNavigationController
     }
 
-    
+
     func guestNeedLogin(){
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
-//        self.present(vc, animated: true, completion: nil)
+       
+        vc.passUserName = {
+            self.userNameLable.text = vc.nameData
+        }
+
         self.present(vc, animated: true) {
         
         }
-        vc.goBackView = {
-        }
+       
     }
 }
 
 extension MenuTableViewController: UITableViewDataSource,UITableViewDelegate {
+    
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return menuInformation.menueTitle.count
@@ -59,17 +71,18 @@ extension MenuTableViewController: UITableViewDataSource,UITableViewDelegate {
         return cell
     }
     
+    
+   
+    
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("toucch is \(indexPath.row)")
-        /* 這裡要先判斷有沒有登入 */
         var selectIndexPath: Int
         selectIndexPath = indexPath.row
-        print(selectIndexPath)
         
-        
-        
-       
-    
+        /* 這裡要先判斷有沒有登入 */
+        let hasAuthInKeychain = GIDSignIn.sharedInstance().hasAuthInKeychain()
+
         switch selectIndexPath {
             
         case 0:
@@ -77,25 +90,33 @@ extension MenuTableViewController: UITableViewDataSource,UITableViewDelegate {
             
         case 1:
             print("我的收藏")
-            switch login {
-                case .guest:
-                
-                    guestNeedLogin()
-
-                
-                case.userHave:
-            print("user")
-                
+            if hasAuthInKeychain == true {
+                changePage(selectIndexPath)
+            } else {
+                guestNeedLogin()
+                nochange()
             }
             
             
         case 2:
             print("歷史收尋紀錄")
-            guestNeedLogin()
+            
+            if hasAuthInKeychain == true {
+//             print(" 我不是遊客")
+            } else {
+                guestNeedLogin()
+                nochange()
+
+            }
             
         case 3:
             print("回饋存摺")
-            guestNeedLogin()
+            if hasAuthInKeychain == true {
+             print(" 我不是遊客")
+            } else {
+                guestNeedLogin()
+                nochange()
+            }
             
         case 4:
             print("設定")
@@ -108,59 +129,32 @@ extension MenuTableViewController: UITableViewDataSource,UITableViewDelegate {
             break
         }
  
-        let nvc = self.mainNavigationController()
 
+        
+    }
+    
+    func changePage(_ selectIndex:Int){
+        
+        let useIndex = String(selectIndex)
+        let nvc = self.mainNavigationController()
+        
         if let hamburguerViewController = self.findHamburguerViewController() {
             hamburguerViewController.hideMenuViewControllerWithCompletion({ () -> Void in
-                //                nvc.visibleViewController.performSegueWithIdentifier(self.segues[indexPath.row], sender: nil)
-                
+                nvc.visibleViewController?.performSegue(withIdentifier: self.segues[useIndex]!, sender: nil)
                 hamburguerViewController.contentViewController = nvc
-                print("=====\(hamburguerViewController)")
             })
         }
-//        ============= ==============
+    }
+    
+    func nochange(){
+        let nvc = self.mainNavigationController()
         
-        /*
-        switch login {
-            
-        case .guest:
-
-            print("跳轉要求登入")
-//            let vc = LoginViewController
-            
-
-            
-        case .userHave:
-            print("登入判斷 點那裡")
-           
-            switch selectIndexPath {
-            case 0:
-                print("首頁 再一次載入主畫面")
+        if let hamburguerViewController = self.findHamburguerViewController() {
+            hamburguerViewController.hideMenuViewControllerWithCompletion({ () -> Void in
                 
-            case 1:
-                print("我的收藏")
-                
-                break
-            case 2:
-                print("歷史收尋紀錄")
-                
-            case 3:
-                print("回饋存摺")
-                
-            case 4:
-                print("設定")
-                
-            default:
-                print("例外錯誤 selectIndexPath ")
-                break
-            }
-            
-            
+                hamburguerViewController.contentViewController = nvc
+            })
         }
-        */
-       
-     
-        
     }
     
     

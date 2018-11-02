@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import GoogleSignIn
 
 class MainViewController: UIViewController {
 
@@ -18,10 +19,16 @@ class MainViewController: UIViewController {
     @IBOutlet weak var thirdView: UILabel!
     @IBOutlet weak var fourthView: UILabel!
     @IBOutlet weak var fiveView: UILabel!
+    
+    @IBOutlet weak var searchBtnView: UIButton!
     var titleArray,backCashArray: [String]!
     
     
     let dataImformation = DataImformation()
+    var haveLog: String?
+    var logis: String?
+    
+    var userNameLable: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,17 +39,48 @@ class MainViewController: UIViewController {
         adjustBtnView(thirdView)
         adjustBtnView(fourthView)
         adjustBtnView(fiveView)
+        adjustBtn(searchBtnView)
+//        print(haveLog)
+        haveLog = logis
     }
     
     @IBAction func leftBtn(_ sender: Any) {
         print("hi")
-        self.findHamburguerViewController()?.showMenuViewController()
+        
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "MenuTableViewController") as! MenuTableViewController
+        
+       
+
+        let hasAuthInKeychain = GIDSignIn.sharedInstance().hasAuthInKeychain()
+        if hasAuthInKeychain == true {
+            print(" 我有登入 ")
+            vc.userNameee = userNameLable
+            self.findHamburguerViewController()?.showMenuViewController()
+
+        } else{
+            print(" 我沒有登入 ")
+            self.findHamburguerViewController()?.showMenuViewController()
+        }
+
+        
     }
+    
+
     
     @IBAction func moreSpeiacl(_ sender: Any) {
         
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "MoreSpecialCollectionView") as! MoreSpecialCollectionView
         navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    // Go Secont pagview
+    @IBAction func searchViewAction(_ sender: Any) {
+        
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "SecondMainViewController") as! SecondMainViewController
+        
+        navigationController?.pushViewController(vc, animated: true)
+
+        
     }
     
     func adjustBtnView(_ uselable:UILabel! ) {
@@ -52,6 +90,16 @@ class MainViewController: UIViewController {
         uselable.layer.borderWidth = 2
         let red =
             UIColor(red: 120.0/255.0, green: 150.0/255.0, blue: 200.0/255.0, alpha: 1.0)
+        uselable.layer.borderColor = red.cgColor
+    }
+    
+    func adjustBtn(_ uselable:UIButton!) {
+        uselable.clipsToBounds = true
+        uselable.layer.cornerRadius = 10
+//        uselable.backgroundColor = .clear
+        uselable.layer.borderWidth = 2
+        let red = UIColor(red: 100.0/255.0, green: 100.0/255.0, blue: 100.0/255.0, alpha: 1.0) //黑色
+
         uselable.layer.borderColor = red.cgColor
     }
     

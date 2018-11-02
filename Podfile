@@ -10,10 +10,13 @@
   pod 'Firebase/Database'
   pod 'Firebase/Core' 
   pod 'GoogleSignIn'
+  pod 'Google'
 
   	target 'BuyBuyGoTests' do
 	inherit! :search_paths
 	pod'Firebase'
+	 pod 'Google'
+
 	end
 
 end
